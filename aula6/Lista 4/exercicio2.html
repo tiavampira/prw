@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista 04 - Formulário</title>
+</head>
+<body>
+    <h2>Coloque aqui suas informações: </h2>
+
+
+    <form action="form-action.php" method="post">
+        <p>Informe sua altura:
+
+        </p>
+        <p>
+            <input type="radio" name="altura" value="alto"/>BAIXO
+            <input type="radio" name="altura" value="medio"/> MEDIO
+            <input type="radio" name="altura" value="alto"/>ALTO
+        </p>
+        <p>
+            <input type="button" value="Submit me!" />
+        </p>
+    </form>
+
+    <form method="post" onsubmit="validaForm(); return false;" class="form">
+    <p class="nome">
+        <label for="nome">Estado brasileiro: </label>
+        <input type="text" placeholder="Coloque seu Nome aqui" />
+    </p>
+    <form action="/action_page.php">
+        <label for="textinho">Coloque aqui suas informações sobre sua pessoa :</label>
+        <textarea id="textinho" name="curiosidade" rows="4" cols="50">
+          
+          </textarea>
+
+          <form name="form1" method="POST" action=”recebe_formulario.php”>
+
+            <input name="nacionalidade" type="checkbox" value=" Brasileiro "> Sou Brasileiro!<br><br>
+            
+            <b>Cores preferidas:</b><br><br>
+            
+            <input name="cor[]" type="checkbox" value="Azul">Azul<br>
+            
+            <input name="cor[]" type="checkbox" value="Amarelo">Amarelo<br>
+            
+            <input name="cor[]" type="checkbox" value="Branco">Branco<br>
+            
+            <input name="cor[]" type="checkbox" value="Cinza">Cinza<br>
+            
+            <input name="cor[]" type="checkbox" value="Preto">Preto<br>
+            
+            <input name="cor[]" type="checkbox" value="Vermelho">Vermelho<br>
+            
+            <input type=”submit” value=”Enviar Formulário” />
+            
+            </form>
+
+            <form action="dataProc.php" method="POST">
+                <select id="dates" name="dates">
+                <option value="0">--Selecionar Dia--</option>
+
+
+          <div class="dropdown">
+          <button class="mainmenubtn">Main Menu</button>
+            <div class="dropdown-child">
+                <a href="https://www.twitch.tv/hiei_rdm">Sub Menu 1</a>
+                <a href="https://www.twitch.tv/tiavampira">Sub Menu 2</a>
+                     </div>
+                     </div>
+                  
+
+    <p class="submit">
+        <input type="submit" value="Enviar" />
+    </p>
+    </form>
+</body>
+</html>
