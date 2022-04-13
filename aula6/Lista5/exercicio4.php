@@ -3,7 +3,7 @@
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$usuarios = array ('queirozellen@gmail.com' => ,'ellen12345'
+$usuarios = array ('queirozellen@gmail.com' => 'ellen12345',
                     'nicoleyay@gmail.com' => 'nicole12345');
 
     

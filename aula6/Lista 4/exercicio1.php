@@ -2,16 +2,16 @@
   $resultado;
   $num1 = $_GET['num1']; 
   $num2 = $_GET['num2'];
-  echo "Seu número 1 é : " 
+  echo "Seu número 1 é : " ;
   echo $num1; "<br>";
 
-  echo "Seu número 2 é: "
+  echo "Seu número 2 é: ";
   echo $num2; "<br>";
   echo "<br /><br />";
 
   switch ($resultado){
 
-    case 1($opcao1){
+    case 1 ($opcao1){
       $resultado = $num1 + $num2;
       echo $resultado++;
       break;
