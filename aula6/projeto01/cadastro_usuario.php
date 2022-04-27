@@ -9,7 +9,7 @@ include ('conexao.php');
  echo "<p>Telefone: ".$telefone_usuario."<br>";
 
  $sql ="insert into usuario ('nome_usuario', 'email_usuario', 'telefone_usuario')
-        values ('".$nome. '" ,"'.$emai. '" ,"'.$telefone. "')";
+        values ('".$nome_usuario. '" ,"'.$email_usuario. '" ,"'.$telefone_usuario. "')";
 
 $result = mysqli_query($con, $sql);
 if($result)
