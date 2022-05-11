@@ -1,48 +1,51 @@
-<?php
+<?php 
 
-include('conexao.php');
-    $sql = "SELECT * FROM usuarios";
+    include ('conexao.php');
+    $sql = 'SELECT * FROM usuario';
 
-    // retorna todos os dados da consulta 
+    //retorna todos os dados da consulta
     $result = mysqli_query($con, $sql);
 
-    // retorna a primeira linha 
-    $row = mysqli_fetch_array($result)
-
+    //retorna a primeira linha
+    //$row = mysqli_fetch_array($result);
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Listagem de Usuarios </title>
-    </head>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Usuários</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
 <body>
 
-<h1>Listagem de usuarios </h1>
-<table align="center" border="3" width=500;
-
+    <h1 align="center">Listagem de Usuários</h1><br>
+    <table align="center" border="1" width="700">
         <tr>
-            <th>Codigo</th>
+            <th>Código</th>
             <th>Nome</th>
-            <th>E-mail</th>
-            <th>Tekefone</th>
-
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Excluir</th>
         </tr>
-        <?php
 
-    while($row = mysqli_fetch_array($result))
-    {
-
-        echo "<tr>";
-        echo "<td>" . $row['id_usuario'] . '</td>';
-        echo "<td>" . $row['nome_usuario'] . '</td>';
-        echo "<td>" . $row['email.usuario'] . '</td>';
-        echo "<td>" . $row['relefone_usuario'] . '</td>';
-        echo "</tr>";
-    }
+        <?php 
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<tr>";
+                echo "<td>" .$row['id_usuario']. "</td>";
+                echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>";
+                echo "<td>" .$row['email_usuario']. "</td>";
+                echo "<td>" .$row['telefone_usuario']. "</td>";
+                echo "<td><a href='excluir_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";                
+                echo "</tr>";
+            }
         ?>
+
+    </table>
 
 </body>
 </html>
