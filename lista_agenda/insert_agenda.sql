@@ -1,6 +1,6 @@
-USE agenda01;
+USE projeto02;
 
-INSERT INTO agenda (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email, data_cadastro)
-VALUES ('Ellen', 'Tia', 'Rua Ernesto Teixeira da Silva', 'Santana', 'Birigui', 'SP', '18996559663', '36921890', 'ellenenarielly28@gmail.com', '2022/09/12');
+INSERT INTO usuario (nome_usuario, email_usuario, telefone)
+VALUES ('Ellen', "ellen12@gmail.com", "11981291289");
 
-SELECT * FROM agenda;
+SELECT * FROM usuario;
