@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fluxo de Caixa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1><font color="#FF0000"> Cadastro de Fluxo de Caixa - IFSP</font></h1>
+    <div id="teste">
+        <form method="post" action="cadastro_fluxo_caixa.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h1>Cadastro</h1></legend>
+
+                <div class="form-item">
+                    <label for="data">Data:</label>
+                    <input type="text" id="data" name="data" placeholder="coloque a data"><p></p>
+                </div>
+
+
+                <div>
+                    <label for="tipo">Escolha o tipo: </label>
+                    <input type="radio" name"tipo" id="tipo1" value="entrada" >Entrada
+                    <input type="radio" name"tipo" id="tipo2" value="saida" >Saida
+                </div>
+
+
+                <div class="form-item">
+                    <label for="valor">Valor:</label>
+                    <input type="text" id="valor" name="valor" placeholder="Digite o valor"><p></p>
+                </div>
+
+
+                <div class="form-item">
+                    <label for="historico">Historico :</label>
+                    <input type="text" id="historico" name="historico" placeholder="Digite o historico"><p></p>
+                </div>
+                <div class="form-item" >
+                    <label for="cheque">Cheque : </label>
+                    <select name="pagamento" id="pagamento">
+                        <option value="sim">Sim </option>
+                        <option value="não">Nao </option>
+                        </select>
+
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" ><p></p>
+                    <a href='index.php'> Voltar</a><p></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

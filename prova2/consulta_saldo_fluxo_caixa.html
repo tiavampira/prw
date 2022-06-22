@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da Agenda</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1><font color="#FF0000"> Cadastro de Fluxo de Caixa - IFSP</font></h1>
+    <div id="teste">
+        <form method="post" action="cadastro_agenda.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h1>Consulta de Saldo do Fluxo de Caixa</h1></legend>
+                <div>
+                    <label for="tipo">Escolha o tipo: </label>
+                    <input type="radio" name'tipo" id="tipo" value="entrada" >Total de Entradas
+                    <input type="radio" name"tipo" id="tipo" value="saida" >Total de Saidas
+                    <input type="radio" name"tipo" id="tipo" value="saldo" >Saldo Total
+                </div>
+                <a href='index.php'> Voltar</a><p></p>
